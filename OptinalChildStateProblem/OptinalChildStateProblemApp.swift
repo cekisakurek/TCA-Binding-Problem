@@ -6,12 +6,15 @@
 //
 
 import SwiftUI
+import ComposableArchitecture
 
 @main
 struct OptinalChildStateProblemApp: App {
+    let store = Store(initialState: AppDomain.State(), reducer: AppDomain())
+                      
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(store: store)
         }
     }
 }

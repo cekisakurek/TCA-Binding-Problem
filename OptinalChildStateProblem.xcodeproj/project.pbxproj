@@ -14,6 +14,7 @@
 		77CA434D292BE1B70044F741 /* OptinalChildStateProblemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CA434C292BE1B70044F741 /* OptinalChildStateProblemTests.swift */; };
 		77CA4357292BE1B70044F741 /* OptinalChildStateProblemUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CA4356292BE1B70044F741 /* OptinalChildStateProblemUITests.swift */; };
 		77CA4359292BE1B70044F741 /* OptinalChildStateProblemUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CA4358292BE1B70044F741 /* OptinalChildStateProblemUITestsLaunchTests.swift */; };
+		77CA4368292BE2930044F741 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 77CA4367292BE2930044F741 /* ComposableArchitecture */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77CA4368292BE2930044F741 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +80,7 @@
 				77CA434B292BE1B70044F741 /* OptinalChildStateProblemTests */,
 				77CA4355292BE1B70044F741 /* OptinalChildStateProblemUITests */,
 				77CA4339292BE1B60044F741 /* Products */,
+				77CA4366292BE2930044F741 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,6 +130,13 @@
 			path = OptinalChildStateProblemUITests;
 			sourceTree = "<group>";
 		};
+		77CA4366292BE2930044F741 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +153,9 @@
 			dependencies = (
 			);
 			name = OptinalChildStateProblem;
+			packageProductDependencies = (
+				77CA4367292BE2930044F741 /* ComposableArchitecture */,
+			);
 			productName = OptinalChildStateProblem;
 			productReference = 77CA4338292BE1B60044F741 /* OptinalChildStateProblem.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +228,9 @@
 				Base,
 			);
 			mainGroup = 77CA432F292BE1B60044F741;
+			packageReferences = (
+				77CA4365292BE2700044F741 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			productRefGroup = 77CA4339292BE1B60044F741 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -577,6 +593,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		77CA4365292BE2700044F741 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		77CA4367292BE2930044F741 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 77CA4365292BE2700044F741 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 77CA4330292BE1B60044F741 /* Project object */;
 }
